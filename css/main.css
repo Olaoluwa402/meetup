@@ -33,7 +33,7 @@ header > nav{
 
 .logo{
     text-decoration: none;
-    color:red;
+    color:green;
 }
 
 header > nav > ul{
@@ -64,7 +64,7 @@ header > nav > ul > li> a{
 }
 
 header > nav > ul > li> a:hover{
-    color:red;
+    color:green;
 }
 
 .menuBar{
@@ -117,7 +117,57 @@ header > nav > ul > li> a:hover{
     transform: translateX(0);
 }
 
+/* main  section stytling*/
+.meetupMain{
+    width:80%;
+    margin: 0 auto;
+}
 
+.meetup__intro{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 5rem;
+}
+
+.meetup__intro > .meetup__intro-left{
+    padding: 1rem;
+}
+
+.meetup__intro > .meetup__intro-left > h1{
+   color: green;
+   font-size: 2rem;
+   font-weight: bold;
+   margin-bottom: 1.5rem;
+}
+
+.meetup__intro > .meetup__intro-right > img{
+    color: green;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+ }
+
+
+
+
+/* End of main */
+
+
+
+
+
+
+/* table */
+@media (max-width:810px){
+    .meetup__intro > .meetup__intro-left > h1{
+        font-size: 1.5rem;
+     }
+}
+
+
+/* tablet/iphone */
 @media (max-width:780px){
     .menuBar{
         display: block;
@@ -127,4 +177,19 @@ header > nav > ul > li> a:hover{
         display: none;
     }
 
+}
+
+/* mobile */
+@media (max-width:520px){
+    .meetup__intro{
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    .meetup__intro > .meetup__intro-left > h1{
+        font-size: 1rem;
+        text-align: center;
+     }
+     .meetup__intro > .meetup__intro-left > p{
+        text-align: justify;
+     }
 }
