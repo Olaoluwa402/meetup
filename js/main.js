@@ -1,3 +1,4 @@
+
 const btn = document.getElementById('menuBar');
 const sideBar = document.getElementById('sideBar');
 
